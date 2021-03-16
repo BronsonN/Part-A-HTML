@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Currency Conversion</title>
+    <script type='text/javascript' src="currencyconverter.js"></script>
+    <link type='text/css' rel='stylesheet' href="currencyconverter.css">
+
+    <img id="companyLogo"
+    src="https://images.unsplash.com/photo-1579623261984-41f9a81d4044?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    alt="Conversion Company Logo">
+    <h1 img>Currency Converter</h1>
+
+</head>
+
+
+<body>
+
+    <div id="area">
+
+        <form name="conversionForm" class="hidden boxed">
+            <h3>What would you like to convert?</h3>
+            <div class="input-field">
+
+                <label for="originalValue" class="label">On Hand:</label>
+                <input id="originalValue" name="originalValue" type="number" min=0 max=100000>
+
+                <div id="conversionButtons">
+                    <input type="radio" id="euro" name="conversion" value="euro"  onclick="getCurrency()">
+                    <label for="euro" class="radioLabel">Euro</label>
+                    <input type="radio" id="usDollar" name="conversion" value="usDollar" onclick="getCurrency()">
+                    <label for="euro" class="radioLabel">US Dollar</label>
+                    <input type="radio" id="canadian" name="conversion" value="canadian" onclick="getCurrency()">
+                    <label for="euro" class="radioLabel">Canadian Dollar</label><br>
+                    <input type="radio" id="bitcoin" name="conversion" value="bitcoin" onclick="getCurrency()">
+                    <label for="euro" class="radioLabel">Bitcoin</label>
+                    <input type="radio" id="ethereum" name="conversion" value="ethereum" onclick="getCurrency()">
+                    <label for="euro" class="radioLabel">Ethereum</label>
+                </div>
+
+            </div>
+
+
+            <h3>What currency would you like to convert to?</h3>
+            <div class="input-field">
+                <div id="conversionButtons2">
+                    <input type="radio" id="euroConversion" name="conversionType" value="euro"
+                        onclick="currencyConverter()">
+                    <label for="euro" class="radioLabel">Euro</label>
+                    <input type="radio" id="americanConversion" name="conversionType" value="usDollar"
+                        onclick="currencyConverter()">
+                    <label for="euro" class="radioLabel">US Dollar</label>
+                    <input type="radio" id="canadianConversion" name="conversionType" value="canadian"
+                        onclick="currencyConverter()">
+                    <label for="euro" class="radioLabel">Canadian Dollar</label><br>
+                    <input type="radio" id="bitcoinConversion" name="conversionType" value="bitcoin"
+                        onclick="currencyConverter()">
+                    <label for="euro" class="radioLabel">Bitcoin</label>
+                    <input type="radio" id="ethereumConversion" name="conversionType" value="ethereum"
+                        onclick="currencyConverter()">
+                    <label for="euro" class="radioLabel">Ethereum</label>
+                </div>
+
+                <br>
+                <input type="text" id="display" value="Convert" onclick="getValue();">
+                <input type="button" value="Convert" onclick="getValue();">
+            </div>
+
+        </form>
+
+
+
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
